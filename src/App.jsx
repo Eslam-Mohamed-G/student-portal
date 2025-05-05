@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import './index.css'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Layout from './layout/Layout'
+import Layout from './Components/layout/Layout'
 const routs = createBrowserRouter([
   {path: '', element: <Layout/>, children: []}
 ])
