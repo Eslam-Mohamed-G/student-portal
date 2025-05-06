@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import avatar from "../../assets/avataaars.svg"
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import './i18n';
 
 export default function SideBar() {
     const [isOpen, setIsOpen] = useState(false);
     const handleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const {t, i18n} = useTranslation();
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng)
     };
     return (
         <div className={`bg-[#925FE2] text-[#c6bbd9] flex flex-col items-center gap-5 min-h-screen md:min-h-[90vh] md:rounded-3xl capitalize relative`}>

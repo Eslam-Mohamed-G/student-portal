@@ -1,0 +1,29 @@
+{
+    "header": "Student Portal",
+    "tabs": {
+      "personal": "Personal Info",
+      "courses": "Courses",
+      "results": "Results"
+    },
+    "personalInfo": {
+      "title": "Personal Info Tab",
+      "studentName": "Student Name: Ahmed Mohamed",
+      "fatherName": "Father Name: Mohamed Ali",
+      "level": "Student Level: Third Year",
+      "grade": "Latest Grade: A"
+    },
+    "timetable": {
+      "time": "Time",
+      "day": "Day",
+      "place": "Place",
+      "instructor": "Instructor"
+    },
+    "results": {
+      "course": "Course",
+      "grade": "Grade",
+      "total": "Total",
+      "year": "Year",
+      "semester": "Semester"
+    }
+  }
+  
