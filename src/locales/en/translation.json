@@ -3,7 +3,7 @@
     "tabs": {
       "personal": "Personal Info",
       "courses": "Courses",
-      "results": "Results"
+      "tabsResults": "Results"
     },
     "personalInfo": {
       "title": "Personal Info Tab",

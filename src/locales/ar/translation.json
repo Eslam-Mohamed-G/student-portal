@@ -3,7 +3,7 @@
     "tabs": {
       "personal": "معلومات شخصية",
       "courses": "الجدول",
-      "results": "النتائج"
+      "tabsResults": "النتائج"
     },
     "personalInfo": {
       "title": "علامة التبويب معلومات شخصية",
