@@ -4,7 +4,7 @@ import SideBar from '../1_sidebar/SideBar';
 
 function Layout() {
     return (
-        <div className='flex items-center h-screen justify-center px-10'>
+        <div className='flex items-center h-screen justify-center md:px-10'>
             <div className=''>
                 <SideBar />
             </div>
