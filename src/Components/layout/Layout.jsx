@@ -4,9 +4,13 @@ import SideBar from '../1_sidebar/SideBar';
 
 function Layout() {
     return (
-        <div className='flex'>
-            <SideBar/>
-            <Outlet />
+        <div className='flex items-center h-screen justify-center px-10'>
+            <div className=''>
+                <SideBar />
+            </div>
+            <div className='flex-1'>
+                <Outlet />
+            </div>
         </div>
     )
 }
