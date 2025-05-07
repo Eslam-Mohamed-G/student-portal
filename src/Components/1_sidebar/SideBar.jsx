@@ -10,18 +10,24 @@ export default function SideBar() {
         setIsOpen(!isOpen);
     };
 
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng)
         localStorage.setItem('i18nextLng', lng);
     };
+
+    const [language, setLanguage] = useState(false);
+    const handleLanguage = () => {
+        setLanguage(!language)
+    };
+
     useEffect(() => {
         document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-      }, [i18n.language]);
+    }, [i18n.language]);
     return (
         <div className={`bg-[#925FE2] text-[#c6bbd9] flex flex-col items-center gap-5 min-h-screen md:min-h-[90vh] md:rounded-3xl capitalize relative`}>
             {/* responsive button */}
-            <button onClick={handleMenu} className={`'block md:hidden absolute top-4 ${isOpen ?"end-2" : ""}`}>
+            <button onClick={handleMenu} className={`'block md:hidden absolute top-4 ${isOpen ? "end-2" : ""}`}>
                 {isOpen ?
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
@@ -37,7 +43,7 @@ export default function SideBar() {
             <div className={`${isOpen ? "w-64 px-10" : "w-12"} md:w-64 md:px-10 pt-14 transition-all duration-300 overflow-hidden`}>
                 {/* avatar */}
                 <div className='flex flex-col gap-4 justify-between items-center  w-full'>
-                    <div className={`md:w-32 md:h-32 ${isOpen ? "w-32 h-32": "w-12 h-12"} transition-all duration-300`}>
+                    <div className={`md:w-32 md:h-32 ${isOpen ? "w-32 h-32" : "w-12 h-12"} transition-all duration-300`}>
                         <img src={avatar} alt="avatar" className='w-full' />
                     </div>
                     <h2 className={`text-xl font-bold md:block ${isOpen ? "block" : "hidden"}`}>{t('header')}</h2>
@@ -71,11 +77,15 @@ export default function SideBar() {
                                 <span className={`md:block ${isOpen ? "block" : "hidden"}`}>{t('tabs.tabsResults')}</span>
                             </NavLink>
                         </li>
-                        <li className='hover:text-white transition-all duration-200'>
-                            <select name="" id="" onChange={(e) => changeLanguage(e.target.value)}>
-                                <option value="en">English</option>
-                                <option value="ar">Arabic</option>
-                            </select>
+
+                        {/* li for changelangue */}
+                        <li className='flex flex-col text-white mt-4'>
+                            { localStorage.getItem('i18nextLng') === 'ar'
+                                ?
+                                <button onClick={() => { changeLanguage('en'); handleLanguage() }} className={`${isOpen ? "p-4": "p-2"} items-center bg-[#C0A3EE] cursor-pointer rounded-3xl transition-all duration-200`}><span className='hidden md:block'>English</span><span className='block md:hidden'>{isOpen?"English":"EN"}</span></button>
+                                :
+                                <button onClick={() => { changeLanguage('ar'); handleLanguage() }} className={`${isOpen ? "p-4": "p-2"} items-center bg-[#C0A3EE] cursor-pointer rounded-3xl transition-all duration-200`}><span className='hidden md:block'>العربية</span><span className='block md:hidden'>{isOpen ? "العربية": "AR"}</span></button>
+                            }
                         </li>
                     </ul>
                 </nav>
