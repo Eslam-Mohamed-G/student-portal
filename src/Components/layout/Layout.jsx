@@ -8,7 +8,7 @@ function Layout() {
             <div className=''>
                 <SideBar />
             </div>
-            <div className='flex-1'>
+            <div className='flex-1 h-screen'>
                 <Outlet />
             </div>
         </div>
