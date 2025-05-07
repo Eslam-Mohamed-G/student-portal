@@ -23,8 +23,10 @@ function Profile() {
 
 
             <div>
-                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 capitalize">
+                <div className="relative overflow-x-auto shadow-md sm:rounded-xl lg:w-1/2 mt-4">
+                    <h3 className='capitalize font-bold text-xl tracking-tight text-[#153e6a] border-b border-[#153e6a] mb-3'>{t("personalInfo.personalInfo")}</h3>
+                    
+                    <table className="w-full text-sm text-left rtl:text-right text-[#3b9dd4] capitalize">
                         {/* <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" className="px-6 py-3">
@@ -36,32 +38,32 @@ function Profile() {
                             </tr>
                         </thead> */}
                         <tbody>
-                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-[#153e6a]">
+                                <th scope="row" className="px-6 py-4 text-[#153e6a] font-bold whitespace-nowrap dark:text-white">
                                 {t('personalInfo.studentName.title')}
                                 </th>
                                 <td className="px-6 py-4">
                                 {t('personalInfo.studentName.content')}
                                 </td>
                             </tr>
-                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-[#153e6a]">
+                                <th scope="row" className="px-6 py-4 text-[#153e6a] font-bold whitespace-nowrap dark:text-white">
                                 {t('personalInfo.fatherName.title')}
                                 </th>
                                 <td className="px-6 py-4">
                                 {t('personalInfo.fatherName.content')}
                                 </td>
                             </tr>
-                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-[#153e6a]">
+                                <th scope="row" className="px-6 py-4 text-[#153e6a] font-bold whitespace-nowrap dark:text-white">
                                 {t('personalInfo.level.title')}
                                 </th>
                                 <td className="px-6 py-4">
                                 {t('personalInfo.level.content')}
                                 </td>
                             </tr>
-                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" className="px-6 py-4 text-[#153e6a] font-bold whitespace-nowrap dark:text-white">
                                 {t('personalInfo.grade.title')}
                                 </th>
                                 <td className="px-6 py-4">
