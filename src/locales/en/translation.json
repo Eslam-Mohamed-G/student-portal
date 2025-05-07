@@ -6,11 +6,24 @@
       "tabsResults": "Results"
     },
     "personalInfo": {
-      "title": "Personal Info Tab",
-      "studentName": "Student Name: Ahmed Mohamed",
-      "fatherName": "Father Name: Mohamed Ali",
-      "level": "Student Level: Third Year",
-      "grade": "Latest Grade: A"
+      "title": "Eslam Mohamed Gomaa",
+      "id": "ID: 1000140150",
+      "studentName": {
+        "title": "student Name",
+        "content":"Eslam Mohamed"
+      },
+      "fatherName": {
+        "title": "father Name",
+        "content": "Mohamed Gomaa"
+      },
+      "level": {
+        "title": "student level",
+        "content": "Third Year"
+      },
+      "grade": {
+        "title": "latest grade",
+        "content": "A"
+      }
     },
     "timetable": {
       "time": "Time",
