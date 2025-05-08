@@ -82,9 +82,9 @@ export default function SideBar() {
                         <li className='flex flex-col text-white mt-4'>
                             { localStorage.getItem('i18nextLng') === 'ar'
                                 ?
-                                <button onClick={() => { changeLanguage('en'); handleLanguage() }} className={`${isOpen ? "p-4": "p-2"} items-center bg-[#3b9dd4] cursor-pointer rounded-3xl transition-all duration-200`}><span className='hidden md:block'>English</span><span className='block md:hidden'>{isOpen?"English":"EN"}</span></button>
+                                <button onClick={() => { changeLanguage('en'); handleLanguage() }} className="bg-[#3b9dd4] cursor-pointer rounded-3xl transition-all duration-200 p-3"><span className='hidden md:block'>English</span><span className='block md:hidden'>{isOpen?"English":"EN"}</span></button>
                                 :
-                                <button onClick={() => { changeLanguage('ar'); handleLanguage() }} className={`${isOpen ? "p-4": "p-2"} items-center bg-[#3b9dd4] cursor-pointer rounded-3xl transition-all duration-200`}><span className='hidden md:block'>العربية</span><span className='block md:hidden'>{isOpen ? "العربية": "AR"}</span></button>
+                                <button onClick={() => { changeLanguage('ar'); handleLanguage() }} className="bg-[#3b9dd4] cursor-pointer rounded-3xl transition-all duration-200 p-3"><span className='hidden md:block'>العربية</span><span className='block md:hidden'>{isOpen ? "العربية": "AR"}</span></button>
                             }
                         </li>
                     </ul>
