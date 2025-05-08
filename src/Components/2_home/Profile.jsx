@@ -23,7 +23,7 @@ function Profile() {
 
 
             <div>
-                <div className="relative overflow-x-auto shadow-md sm:rounded-xl lg:w-1/2 mt-4">
+                <div className="shadow-md sm:rounded-xl lg:w-1/2 mt-4">
                     <h3 className='capitalize font-bold text-xl tracking-tight text-[#153e6a] border-b border-[#153e6a] mb-3'>{t("personalInfo.personalInfo")}</h3>
                     
                     <table className="w-full text-sm text-left rtl:text-right text-[#3b9dd4] capitalize">
