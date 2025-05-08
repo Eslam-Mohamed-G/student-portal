@@ -1,12 +1,27 @@
-# React + Vite
+# Student Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Student Portal built using **React**, **Vite** for fast development, **i18next** for multi-language support, and **React Router** for navigation. The portal allows students to view their personal information, timetable, and results in a user-friendly interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multi-language support (English and Arabic)
+- View student personal information
+- Display timetable with course details
+- View results of courses with grades and totals
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: For building the user interface.
+- **Vite**: For fast and optimized development and build setup.
+- **React Router**: For handling routing between different views.
+- **i18next**: For internationalization and supporting multiple languages.
+- **Tailwind CSS**: For styling the components.
+- **Vercel**: For hosting the application.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/student-portal.git

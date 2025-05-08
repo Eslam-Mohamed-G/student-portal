@@ -8,7 +8,7 @@ import Profile from './Components/2_home/Profile';
 import TimeTable from './Components/3_timeTable/TimeTable';
 import Result from './Components/4_result/Result';
 const routs = createBrowserRouter([
-  {path: 'process.env.PUBLIC_URL', element: <Layout/>, children: [
+  {path: '', element: <Layout/>, children: [
     {index:true, element: <Profile/>},
     {path:'timeTable', element: <TimeTable/>},
     {path:'result', element: <Result/>}
