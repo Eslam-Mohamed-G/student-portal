@@ -27,10 +27,20 @@
       }
     },
     "timetable": {
-      "time": "الوقت",
-      "day": "اليوم",
-      "place": "المكان",
-      "instructor": "المحاضر"
+      "name": {
+        "operation": "أنظمة تشغيل الحاسوب",
+        "programming": "البرمجة",
+        "algorithms": "خوارزميات",
+        "business": "إدارة الأعمال"
+      },
+      "place": {
+        "room": "مكان",
+        "place1": "أ-12",
+        "place2": "أ-11",
+        "place3": "ب-11",
+        "place4": "ب-12"
+      },
+      "instructor": "د: أحمد على"
     },
     "results": {
       "course": "المادة",

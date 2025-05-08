@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 export default function TimeTable() {
+  const { t, i18n } = useTranslation();
   return (
     <div className='container'>
       <div className='flex flex-col gap-5'>
@@ -11,9 +14,9 @@ export default function TimeTable() {
             <span>9.00</span>
           </div>
           <div className='flex flex-col justify-center md:flex-row md:items-center md:justify-between md:w-full md:m-auto px-3 capitalize'>
-            <span className='text-[#153e6a] font-bold md:w-1/3'>financial accounting</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>room: a-11</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>dr: ahmed ali</span>
+            <span className='text-[#153e6a] font-bold md:w-1/3'>{t('timetable.name.operation')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.place.room')}: {t('timetable.place.place1')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.instructor')}</span>
           </div>
         </div>
 
@@ -24,9 +27,9 @@ export default function TimeTable() {
             <span>10.00</span>
           </div>
           <div className='flex flex-col justify-center md:flex-row md:items-center md:justify-between md:w-full md:m-auto px-3 capitalize'>
-            <span className='text-[#153e6a] font-bold md:w-1/3'>marketing</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>room: a-12</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>dr: ahmed ali</span>
+          <span className='text-[#153e6a] font-bold md:w-1/3'>{t('timetable.name.programming')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.place.room')}: {t('timetable.place.place2')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.instructor')}</span>
           </div>
         </div>
 
@@ -37,9 +40,9 @@ export default function TimeTable() {
             <span>11.30</span>
           </div>
           <div className='flex flex-col justify-center md:flex-row md:items-center md:justify-between md:w-full md:m-auto px-3 capitalize'>
-            <span className='text-[#153e6a] font-bold md:w-1/3'>finance</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>room: b-11</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>dr: ahmed ali</span>
+            <span className='text-[#153e6a] font-bold md:w-1/3'>{t('timetable.name.algorithms')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.place.room')}: {t('timetable.place.place3')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.instructor')}</span>
           </div>
         </div>
 
@@ -50,9 +53,9 @@ export default function TimeTable() {
             <span>1.00</span>
           </div>
           <div className='flex flex-col justify-center md:flex-row md:items-center md:justify-between md:w-full md:m-auto px-3 capitalize'>
-            <span className='text-[#153e6a] font-bold md:w-1/3'>business management</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>room: b-12</span>
-            <span className='text-[#3b9dd4] md:w-1/3'>dr: ahmed ali</span>
+            <span className='text-[#153e6a] font-bold md:w-1/3'>{t('timetable.name.business')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.place.room')}: {t('timetable.place.place4')}</span>
+            <span className='text-[#3b9dd4] md:w-1/3'>{t('timetable.instructor')}</span>
           </div>
         </div>
       </div>

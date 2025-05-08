@@ -27,10 +27,20 @@
       }
     },
     "timetable": {
-      "time": "Time",
-      "day": "Day",
-      "place": "Place",
-      "instructor": "Instructor"
+      "name": {
+        "operation": "Operation Systems",
+        "programming": "Programming",
+        "algorithms": "Algorithms",
+        "business": "business"
+      },
+      "place": {
+        "room": "room",
+        "place1": "a-12",
+        "place2": "a-11",
+        "place3": "b-11",
+        "place4": "b-12"
+      },
+      "instructor": "dr: ahmed ali"
     },
     "results": {
       "course": "Course",
