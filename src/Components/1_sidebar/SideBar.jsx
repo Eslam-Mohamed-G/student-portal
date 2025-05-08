@@ -70,7 +70,7 @@ export default function SideBar() {
                             </NavLink>
                         </li>
                         <li className='hover:text-white transition-all duration-200'>
-                            <NavLink className={`flex gap-2 h-12 items-center ${isOpen ? "ps-4": "justify-center"} md:justify-start md:ps-4 hover:bg-[#3b9dd4] cursor-pointer rounded-3xl transition-all duration-200`}>
+                            <NavLink to={'result'} onClick={() => { handleMenu() }} className={`flex gap-2 h-12 items-center ${isOpen ? "ps-4": "justify-center"} md:justify-start md:ps-4 hover:bg-[#3b9dd4] cursor-pointer rounded-3xl transition-all duration-200`}>
                                 <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 19">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 12 5.419 3.871A1 1 0 0 0 16 15.057V2.943a1 1 0 0 0-1.581-.814L9 6m0 6V6m0 6H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h7m-5 6h3v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5Zm15-3a3 3 0 0 1-3 3V6a3 3 0 0 1 3 3Z" />
                                 </svg>
