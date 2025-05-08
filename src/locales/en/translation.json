@@ -48,6 +48,29 @@
       "total": "Total",
       "year": "Year",
       "semester": "Semester"
+    },
+    "courses": {
+      "course1": {
+        "name": "Data Structures",
+        "grade": "excellent",
+        "total": "95",
+        "year": "Third",
+        "semester": "First "
+      },
+      "course2": {
+        "name": "Operating Systems",
+        "grade": "very good",
+        "total": "88",
+        "year": "Third",
+        "semester": "First"
+      },
+      "course3": {
+        "name": "Databases",
+        "grade": "good",
+        "total": "85",
+        "year": "Third",
+        "semester": "First"
+      }
     }
   }
   
