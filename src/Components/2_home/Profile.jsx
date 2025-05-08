@@ -4,11 +4,7 @@ import { useTranslation } from 'react-i18next';
 import '../../i18n';
 
 function Profile() {
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng)
-        localStorage.setItem('i18nextLng', lng);
-    };
+    const { t } = useTranslation();
     return (
         <div className='container md:px-5'>
                 <div className="flex items-center bg-[#b5c2cf] rounded-2xl shadow-sm md:max-w-xl md:px-5 md:py-4">
