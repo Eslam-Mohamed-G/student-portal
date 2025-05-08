@@ -27,16 +27,6 @@ function Profile() {
                     <h3 className='capitalize font-bold text-xl tracking-tight text-[#153e6a] border-b border-[#153e6a] mb-3'>{t("personalInfo.personalInfo")}</h3>
                     
                     <table className="w-full text-sm text-left rtl:text-right text-[#3b9dd4] capitalize">
-                        {/* <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" className="px-6 py-3">
-                                    Product name
-                                </th>
-                                <th scope="col" className="px-6 py-3">
-                                    Color
-                                </th>
-                            </tr>
-                        </thead> */}
                         <tbody>
                             <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-[#153e6a]">
                                 <th scope="row" className="px-6 py-4 text-[#153e6a] font-bold whitespace-nowrap dark:text-white">
