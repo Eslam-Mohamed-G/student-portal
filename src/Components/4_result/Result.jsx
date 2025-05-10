@@ -6,9 +6,9 @@ function Result() {
     const { t, i18n } = useTranslation();
     return (
         <div className="overflow-x-auto shadow-md sm:rounded-lg">
-            <table className="w-full text-sm text-left rtl:text-right text-[#3b9dd4] dark:text-gray-400">
+            <table className="w-full text-sm text-left rtl:text-right text-secondary dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr className='text-[#153e6a]'>
+                    <tr className='text-primary'>
                         <th scope="col" className="px-2 py-3">
                             {t('results.course')}
                         </th>
